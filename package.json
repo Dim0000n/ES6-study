@@ -1,0 +1,15 @@
+{
+    "name": "ES6_study",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Dmity Utev",
+    "scripts": {
+        "_comment": "the script to compile ES6 to ES5 via babel", 
+        "watch": "babel app/js -d app/dist --presets env -w"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0"
+    }
+}
