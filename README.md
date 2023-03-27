@@ -7,5 +7,19 @@ To install babel in devDependencies
 ```
 npm i babel-cli babel-core babel-preset-env --save-dev
 ``` 
+Compiles files ('watch' in package.json)
+```
+babel app/js -d app/dist --presets env -w
+```
+
+To install REST and SPREAD plugin
+```
+npm install --save-dev babel-plugin-transform-object-rest-spread
+```
+Use plugin in watcher ``` --plugins transform-object-rest-spread```
+The "watch"-script
+```
+babel app/js -d app/dist --plugins transform-object-rest-spread --presets env -w
+```
 Best wishes,
 Dmitry Utev. 
