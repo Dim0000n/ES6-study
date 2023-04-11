@@ -21,5 +21,9 @@ The "watch"-script
 ```
 babel app/js -d app/dist --plugins transform-object-rest-spread --presets env -w
 ```
+To work with async/await
+```
+npm i --save-dev babel-polyfill babel-preset-es2015 babel-preset-stage-0 babel-loader
+```
 Best wishes,
 Dmitry Utev. 
